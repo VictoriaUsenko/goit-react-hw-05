@@ -10,7 +10,6 @@ export {
 const base = "https://api.themoviedb.org/3";
 
 const options = {
-  // method: "GET",
   headers: {
     accept: "application/json",
     Authorization:
@@ -30,8 +29,6 @@ const fetchMovies = async (userRequest) => {
   );
   return data.results;
 };
-
-//'https://api.themoviedb.org/3/search/movie?query=gru&language=en-US&page=1'
 
 const fetchMovieDetails = async (movieId) => {
   const { data } = await axios(`${base}/movie/${movieId}`, options);
