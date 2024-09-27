@@ -23,7 +23,7 @@ export default function MovieReviews() {
       }
     };
     getReviews();
-  }, []);
+  }, [movieId]);
 
   return (
     <div>
